@@ -52,8 +52,8 @@ Reusable Terraform modules and environment configurations for provisioning AWS i
 
 ```bash
 # Clone the repo
-git clone <repo-url>
-cd aws-infra-terraform
+git clone https://github.com/hemanth7040/aws-terraform-infrastructure.git
+cd aws-terraform-infrastructure
 
 # Move into the environment you want to provision
 cd environments/dev
