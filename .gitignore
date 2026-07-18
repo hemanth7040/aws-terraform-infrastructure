@@ -1,0 +1,98 @@
+############################################
+# Terraform
+############################################
+
+# Terraform working directory
+**/.terraform/*
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+############################################
+# Terraform Variables
+############################################
+
+# Ignore if they contain secrets
+*.auto.tfvars
+*.auto.tfvars.json
+terraform.tfvars.json
+
+# NOTE:
+# Keeping terraform.tfvars in Git for now because it contains
+# only non-sensitive learning configuration.
+#
+# When secrets (DB passwords, API keys, etc.) are introduced,
+# uncomment the following line:
+#
+# terraform.tfvars
+
+############################################
+# Terraform Plan Files
+############################################
+
+*.tfplan
+plan.out
+
+############################################
+# Python
+############################################
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+
+############################################
+# Environment Files
+############################################
+
+.env
+.env.*
+
+############################################
+# IDEs
+############################################
+
+.vscode/
+.idea/
+
+############################################
+# Operating System
+############################################
+
+.DS_Store
+Thumbs.db
+
+############################################
+# Logs
+############################################
+
+*.log
+
+############################################
+# Temporary Files
+############################################
+
+*.tmp
+*.bak
+*.swp
+*.swo
