@@ -9,6 +9,14 @@ aws_region = "ap-south-2"
 aws_profile = "default"
 
 ##############################
+# IAM
+##############################
+
+role_name = "dev-ec2-role"
+policy_name = "dev-ebs-snapshot-policy"
+instance_profile_name = "dev-ec2-instance-profile"
+
+##############################
 # VPC
 ##############################
 
@@ -81,8 +89,8 @@ alb_ingress_rules = {
 alb_egress_rules = {
 
   all = {
-    from_port = 0
-    to_port   = 0
+    from_port = -1
+    to_port   = -1
     protocol  = "-1"
     cidr_ipv4 = "0.0.0.0/0"
   }
@@ -99,8 +107,8 @@ app_sg_description = "Application EC2 Security Group"
 app_egress_rules = {
 
   all = {
-    from_port = 0
-    to_port   = 0
+    from_port = -1
+    to_port   = -1
     protocol  = "-1"
     cidr_ipv4 = "0.0.0.0/0"
   }
@@ -117,8 +125,8 @@ db_sg_description = "Database Security Group"
 db_egress_rules = {
 
   all = {
-    from_port = 0
-    to_port   = 0
+    from_port = -1
+    to_port   = -1
     protocol  = "-1"
     cidr_ipv4 = "0.0.0.0/0"
   }

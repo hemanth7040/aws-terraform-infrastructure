@@ -1,4 +1,20 @@
 ############################################
+# IAM
+############################################
+
+module "iam" {
+
+  source = "../../modules/iam"
+  role_name             = var.role_name
+  policy_name           = var.policy_name  
+  instance_profile_name = var.instance_profile_name
+
+  tags = local.common_tags
+
+}
+
+
+############################################
 # VPC
 ############################################
 
